@@ -1,13 +1,17 @@
 #include "main.h"
 
 /**
- * print_times_table - prints times table for numbers from 0-14
+ * print_times - check main
+ * Describtion: prints times table for numbers from 0-14
  * @n: An input integer value
- * Return: Nothing
+ * Return: Nothing - prints to console
  */
 void print_times_table(int n)
 {
 	int i, j;
+
+	if (n == 0)
+		_putchar('0');
 
 	if (n > 0 && n < 15)
 	{
