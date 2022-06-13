@@ -12,7 +12,7 @@ void puts2(char *str)
 
 	while (str[len] != '\0')
 	{
-		int value = atoi(str[len]);
+		int value = (int)(str[len]);
 		if (value % 2 == 0)
 			_putchar(str[len]);
 		len++;
