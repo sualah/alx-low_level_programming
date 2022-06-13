@@ -1,21 +1,19 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- * puts2 - print every other character
+ * rev_string - reverse string
  * @str: character string pointer
  *
  * Return: nothing
  */
-void puts2(char *str)
+void rev_string(char *str)
 {
 	int len = 0;
 
-	while (str[len] != '\0')
-	{
-		if (atoi(str[len]) % 2 == 0)
-			_putchar(str[len];
+	while (s[len] != '\0')
 		len++;
-	}
 
-	_putchar('\n');
+	for (len -= 1; len >= 0 ; len--)
+		_putchar(s[len]);
 }
+
