@@ -12,8 +12,9 @@ void puts2(char *str)
 
 	while (str[len] != '\0')
 	{
-		if (atoi(str[len]) % 2 == 0)
-			_putchar(str[len];
+		int value = atoi(str[len]);
+		if (value % 2 == 0)
+			_putchar(str[len]);
 		len++;
 	}
 
