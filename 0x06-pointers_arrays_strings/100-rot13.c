@@ -1,22 +1,31 @@
-#include "mainh"
-
 /**
- * print_number - function with one argument
- * @n: int type argument
+ * rot13 - encode with rot13
+ * @str: char type pointer argument
  *
- * Description: prints an integer
- * Return: value of n
+ * Description: encodes rot13 with a string
+ * Return: string value
  */
-void print_number(int n)
+char *rot13(char *str)
 {
-	if (n < 0)
+	char *input, *output;
+	int count, count2;
+
+	input = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	output = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+	count = 0;
+	while (str[count] != '\0')
 	{
-		n = -n;
-		_putchar('-');
+		count2 = 0;
+		while (input[count2] != '\0')
+		{
+			if (str[count] == input[count2])
+			{
+				str[count] = output[count2];
+				break;
+			}
+			count2++;
+		}
+		count++;
 	}
-	if (n / 10)
-	{
-		print_number(n / 10);
-	}
-	_putchar(n % 10 + '0');
+	return (str);
 }
