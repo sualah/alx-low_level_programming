@@ -6,15 +6,17 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int flips = 0;
-	unsigned long int xor = (n ^ m);
-	unsigned long int max = 0x01;
+	unsigned long int diff, check;
+	unsigned int count, i;
 
-	while (max <= xor)
+	count = 0;
+	check = 1;
+	diff = n ^ m;
+	for (i = 0; i < (sizeof(unsigned long int) * 8); i++)
 	{
-		if (max & xor)
-			flips++;
-		max <<= 1;
+		if (check == (diff & check))
+			count++;
+		check <<= 1;
 	}
-	return (flips);
+	return (count);
 }

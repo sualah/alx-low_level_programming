@@ -6,18 +6,13 @@
  *
  * Return: Always 0.
  */
-int main(void)
+int clear_bit(unsigned long int *n, unsigned int index)
 {
-  unsigned long int n;
+  unsigned long int set;
 
-  n = 1024;
-  clear_bit(&n, 10);
-  printf("%lu\n", n);
-  n = 0;
-  clear_bit(&n, 10);
-  printf("%lu\n", n);
-  n = 98;
-  clear_bit(&n, 1);
-  printf("%lu\n", n);
-  return (0);
+  if (index > (sizeof(unsigned long int) * 8 - 1))
+    return (-1);
+  set = ~(1 << index);
+  *n = *n & set;
+  return (1);
 }
