@@ -1,11 +1,6 @@
 #include "main.h"
 
 /**
- * print_binary - A function that prints a binary number without % or /
- * @n: The number to be printed
- * Return: Nothing
- */
-/**
  * _pow - calculates (base ^ power)
  * @base: base of the exponent
  * @power: power of the exponent
