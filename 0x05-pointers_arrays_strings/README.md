@@ -1,11 +1,11 @@
-#General
+# General
 What are pointers and how to use them
 What are arrays and how to use them
 What are the differences between pointers and arrays
 How to use strings and how to manipulate them
 Scope of variables
 
-#Copyright - Plagiarism
+# Copyright - Plagiarism
 
 You are tasked to come up with solutions for the tasks below yourself to meet with the above learning objectives.
 You will not be able to meet the objectives of this or any following project by copying and pasting someone else’s work.
@@ -13,8 +13,8 @@ You are not allowed to publish any content of this project.
 Any form of plagiarism is strictly forbidden and will result in removal from the program.
 
 
-#Requirements
-#General
+# Requirements
+# General
 Allowed editors: vi, vim, emacs
 All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
 All your files should end with a new line
@@ -30,7 +30,7 @@ The prototypes of all your functions and the prototype of the function _putchar 
 Don’t forget to push your header file
 
 
-#More Info
+# More Info
 You do not need to learn about pointers to functions, pointers to pointers, multidimensional arrays, arrays of structures, malloc and free - yet.
 
 0. Write a function that takes a pointer to an int as parameter and updates the value it points to to 98.
