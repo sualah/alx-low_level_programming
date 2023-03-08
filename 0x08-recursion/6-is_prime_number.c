@@ -30,7 +30,7 @@ int is_prime_helper(int n, int i)
  *
  * @n: number
  *
- * Result: return 1 if n is prime and 0 otherwise
+ * Result: 1 if n is prime and 0 otherwise
  */
 int is_prime_number(int n)
 {
