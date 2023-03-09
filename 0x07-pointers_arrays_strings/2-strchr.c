@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 #include <stddef.h>
 
 /**
@@ -11,17 +11,16 @@
  */
 char *_strchr(char *s, char c)
 {
-	char *ptr = NULL;
-	int len = 0;
-
-	while (s[len] != '\0')
+	while (*s)
 	{
-		if (s[len] == c)
+		if (*s == c)
 		{
-			ptr = &s[len];
-			break;
+			return (s);
 		}
-		len++;
+		s++;
 	}
-	return (ptr);
+	if (c == *s)
+	{
+		return (s);
+	return (NULL);
 }
