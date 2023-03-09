@@ -1,4 +1,4 @@
-i#include "main.h"
+#include "main.h"
 #include <stddef.h>
 
 /**
@@ -20,7 +20,6 @@ char *_strchr(char *s, char c)
 		s++;
 	}
 	if (c == *s)
-	{
 		return (s);
 	return (NULL);
 }
