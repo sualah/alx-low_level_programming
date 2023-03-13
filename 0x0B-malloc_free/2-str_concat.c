@@ -31,14 +31,14 @@ char *str_concat(char *s1, char *s2)
 	if (str == NULL)
 		return ("");
 
-	while (*s1)
+	while (s1 != NULL && *s1)
 	{
 		str[l1] = *s1;
 		s1++;
 		l1++;
 	}
 
-	while (*s2)
+	while (s2 != NULL && *s2)
 	{
 		str[l1 + l2] = *s2;
 		s2++;
