@@ -19,6 +19,9 @@ char *_strdup(char *str)
 		return (NULL);
 	s = malloc(sizeof(str));
 
+	if (s == NULL)
+		return (NULL);
+
 	while (*str)
 	{
 		s[i] = *str++;
