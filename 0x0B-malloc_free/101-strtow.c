@@ -15,7 +15,6 @@ char **strtow(char *str)
 	char **words;
 	char *word;
 
-
 	if (str == NULL || *str == '\0')
 		return (NULL);
 	for (i = 0; str[i] != '\0'; i++)
@@ -46,6 +45,7 @@ char **strtow(char *str)
 		{
 			int start = j;
 			int end = start;
+
 			while (str[end] != ' ' && str[end] != '\0')
 			{
 				end++;
