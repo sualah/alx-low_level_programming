@@ -5,7 +5,7 @@
 /**
  * print_opcodes - print
  * @buffer: string
- * @num_bytes
+ * @num_bytes: number
  * Return: nothing
  */
 void print_opcodes(const char *buffer, int num_bytes)
