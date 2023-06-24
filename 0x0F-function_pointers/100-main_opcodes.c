@@ -4,13 +4,14 @@
 
 /**
  * print_opcodes - print
- * @buffer: string 
+ * @buffer: string
  * @num_bytes
  * Return: nothing
  */
 void print_opcodes(const char *buffer, int num_bytes)
 {
 	int i;
+
 	for (i = 0; i < num_bytes; i++)
 	{
 		printf("%.2hhx", buffer[i]);
@@ -20,8 +21,8 @@ void print_opcodes(const char *buffer, int num_bytes)
 
 /**
  * main - entry point
- * argc: argument count
- * argv: argument list
+ * @argc: argument count
+ * @argv: argument list
  * Return: 0 if success 1 otherwise
  */
 int main(int argc, char *argv[])
@@ -40,6 +41,7 @@ int main(int argc, char *argv[])
 	}
 	void *main_address = (void *)&main;
 	char *main_ptr = (char *)main_address;
+
 	print_opcodes(main_ptr, num_bytes);
-	return 0;
+	return (0);
 }
