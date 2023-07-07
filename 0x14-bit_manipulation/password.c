@@ -3,7 +3,7 @@
 
 void check_password(char* password) {
     if (strlen(password) == 4) {
-        if (password[0] + (password[2] << 3) & 0x46C6F48 == 74215240 && password[1] == -1 && password[3] == 0) {
+        if ((password[0] + (password[2] << 3) & 0x46C6F48) == 74215240 && password[1] == -1 && password[3] == 0) {
             // Correct password logic
         } else {
             // Incorrect password logic
