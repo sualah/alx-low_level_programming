@@ -16,7 +16,7 @@ int safe_close(int);
 int main(int argc, char *argv[])
 {
 	char buffer[1024];
-	int bytes_read = 0, _EOF = 1, from_fd = -1, to_fd = -1, error = 0;
+	int _EOF = 1, from_fd = -1, to_fd = -1, error = 0;
 
 	if (argc != 3)
 	{
@@ -51,7 +51,6 @@ int main(int argc, char *argv[])
 		}
 		else if (_EOF == 0)
 			break;
-		bytes_read += _EOF;
 		error = write(to_fd, buffer, _EOF);
 		if (error < 0)
 		{
