@@ -24,6 +24,7 @@ void print_elf_header(const char *filename)
 {
 	Elf64_Ehdr elf_header;
 	ssize_t bytes_read;
+	int i;
 	int fd = open(filename, O_RDONLY);
 
 	if (fd == -1)
@@ -37,7 +38,7 @@ void print_elf_header(const char *filename)
 	}
 	close(fd);
 	printf("Magic: ");
-	for (int i = 0; i < EI_NIDENT; i++)
+	for (i = 0; i < EI_NIDENT; i++)
 	{
 		printf("%02x ", elf_header.e_ident[i]);
 	}
