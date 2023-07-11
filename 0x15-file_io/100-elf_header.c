@@ -61,7 +61,7 @@ void print_elf_header(const char *filename)
  * main - entry point
  * @argc: number of arguments
  * @argv: array of arguments
- * Return 0 if success and 1 otherwise
+ * Return: 0 if success and 1 otherwise
  */
 int main(int argc, char *argv[])
 {
